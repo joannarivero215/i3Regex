@@ -32,8 +32,10 @@ White Space Characters:
 '''
 # imports the regular expression moduel
 import re 
-text = ''' @obama did you see @scotus passed your laws'''                                         
-output = re.findall(r'@([A-Za-z0-9_]+)', text) #(r'@([A-Za-z0-9_]+)') ## prints twitter names
+# Use "with" so the file will automatically be closed
+text = ''' {"created_at":"Mon Jun 29 01:20:19 +0000 2015","id":615328911585480704,"text":"you" see @scotus passed your laws}'''  
+#output = re.findall(r'@([A-Za-z0-9_]+)', text)  
+date = re.findall(r'"created_at":"(.*?)"', text)    # capture all data between string       
 # Join the matches together
-out_twt = ",".join(output)
+out_twt = ",".join(date)
 print out_twt
