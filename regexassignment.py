@@ -3,6 +3,13 @@ takes input from your twitter text file and finds the patter that will
 allow you to extract string in "text":"Supreme Court Declares Bans on 
 Same-Sex Marriage Unconstitutional http:\/\/t.co\/HQbVO988L0  #SCOTUS 
 #Lovewins". 
+
+The result should be: 
+
+Supreme Court Declares Bans on 
+Same-Sex Marriage Unconstitutional http:\/\/t.co\/HQbVO988L0  #SCOTUS 
+#Lovewins
+
 '''
 
 
